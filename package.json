@@ -1,0 +1,33 @@
+{
+  "name": "eslint-config-kapgel",
+  "version": "1.0.0",
+  "description": "ESLint shareable config for the KapGel projects",
+  "main": "legacy.js",
+  "scripts": {
+    "major": "npm version major -m 'New major version %s' && npm publish",
+    "minor": "npm version minor -m 'New minor version %s' && npm publish",
+    "patch": "npm version patch -m 'New patch version %s' && npm publish",
+    "postpublish": "git push && git push --tags",
+    "test": "eslint ."
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "",
+  "repository": "git@github.com:kapgel/eslint-config-kapgel.git",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-json": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1"
+  }
+}

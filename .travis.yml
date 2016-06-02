@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "6"
+  - "5"
+  - "4"
+  - "4.4" #LTS
+before_install:
+  - npm install -g eslint
+before_script:
+  - eslint --version
+script:
+  - npm test
