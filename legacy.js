@@ -3,7 +3,7 @@
 module.exports = {
   extends: 'airbnb/legacy',
   plugins: ['json'],
-  evn: {
+  env: {
     mocha: true,
     browser: true,
     jquery: true,
